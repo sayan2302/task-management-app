@@ -42,16 +42,16 @@ To get started with this project, follow these simple steps:
 
 1. **Clone the Repository:**
 
-   git clone https://github.com/yourusername/task-management-app.git
+   git clone https://github.com/sayan2302/task-management-app.git
    cd task-management-app
 
-2. **Install Dependencies:**
+3. **Install Dependencies:**
 
    Make sure you have Node.js installed. Then, run:
 
    npm install
 
-3. **Run the Application:**
+4. **Run the Application:**
 
    Start the development server with:
 
