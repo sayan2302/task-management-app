@@ -1,0 +1,221 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #2c2f33;
+    /* Dark background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: #23272a;
+    /* Darker navbar */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 100;
+}
+
+.navbar h1 {
+    font-size: 24px;
+}
+
+.navbar button {
+    background-color: #dc3545;
+    /* Logout button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navbar button:hover {
+    background-color: #c82333;
+    /* Darker on hover */
+}
+
+/* Container */
+.app-container {
+    background-color: #3e444b;
+    /* Darker container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    margin-top: 70px;
+    /* Adjusted spacing for the fixed navbar */
+    overflow-y: auto;
+}
+
+/* Header */
+h1 {
+    text-align: left;
+    color: #ffffff;
+    /* Light text */
+    margin-bottom: 30px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Space between inputs */
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #555;
+    /* Darker border */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #444;
+    /* Darker input field */
+    color: #ffffff;
+    /* Light text */
+}
+
+input::placeholder {
+    color: #bbb;
+    /* Light placeholder text */
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    /* Primary button */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Darker on hover */
+}
+
+/* Task List */
+.task-list {
+    margin-top: 20px;
+}
+
+.task {
+    background-color: #444;
+    /* Darker task background */
+    border: 1px solid #555;
+    /* Darker border */
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task.completed {
+    text-decoration: line-through;
+    color: #000000;
+    /* Color for completed tasks */
+    text-decoration-thickness: 3px;
+    /* Adjust thickness for the line-through */
+}
+
+
+.task-title {
+    flex-grow: 1;
+    color: #ffffff;
+    /* Light text */
+}
+
+.task-actions button {
+    margin-left: 5px;
+    background-color: #ffc107;
+    /* Edit button */
+}
+
+.task-actions button:hover {
+    background-color: #e0a800;
+    /* Darker on hover */
+}
+
+button.delete-task {
+    background-color: #dc3545;
+    /* Delete button */
+}
+
+button.delete-task:hover {
+    background-color: #c82333;
+    /* Darker on hover */
+}
+
+/* Input field for adding/editing tasks */
+.add-task-input {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-task-input input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+/* Layout */
+.auth-container {
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
+
+.auth-header {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    /* Light text */
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Spacing */
+.button-group {
+    display: flex;
+    gap: 10px;
+    /* Space between buttons */
+}
+
+.delete-button {
+    background-color: coral;
+}
+
+.delete-button:hover {
+    background-color: rgb(174, 83, 51);
+}
